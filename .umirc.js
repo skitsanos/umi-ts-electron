@@ -11,6 +11,9 @@ export default defineConfig({
         type: 'none'
     },
 
+    pwa: false,
+    lessLoader: {javascriptEnabled: true},
+
     routes: [
         {path: '/', component: '@/pages/index'}
     ],

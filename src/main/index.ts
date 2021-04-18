@@ -1,7 +1,6 @@
 import {app, BrowserWindow, protocol} from 'electron';
 import path from 'path';
 import createProtocol from 'umi-plugin-electron-builder/lib/createProtocol';
-import installExtension, {REACT_DEVELOPER_TOOLS} from 'electron-devtools-installer';
 
 const isDevelopment = process.env.NODE_ENV === 'development';
 let mainWindow: BrowserWindow;
@@ -20,7 +19,10 @@ function createWindow() {
             preload: path.join(__dirname, 'preload.js')
         }
     });
+
     if (isDevelopment) {
+        mainWindow.webContents.openDevTools();
+
         mainWindow.loadURL('http://localhost:8000');
     } else {
         createProtocol('app');
@@ -29,9 +31,6 @@ function createWindow() {
 }
 
 app.on('ready', async () => {
-    //if (isDevelopment) {
-    await installExtension(REACT_DEVELOPER_TOOLS);
-    //}
     createWindow();
 });
 
