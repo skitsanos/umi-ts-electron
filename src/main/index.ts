@@ -13,6 +13,8 @@ function createWindow() {
     mainWindow = new BrowserWindow({
         width: 800,
         height: 700,
+        minWidth: 500,
+        minHeight: 400,
         title: `My app -- ${process.env.NODE_ENV}`,
         webPreferences: {
             contextIsolation: true,
