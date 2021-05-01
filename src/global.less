@@ -8,8 +8,17 @@
 
 @color-red: crimson;
 
-html {
+
+@import "styles/app";
+
+html, body, #root {
   font-family: @font-family;
+
+  height: 100vh;
+}
+
+#root{
+  display: flex;
 }
 
 h1, h2, h3 {

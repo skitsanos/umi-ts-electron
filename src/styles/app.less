@@ -1,0 +1,47 @@
+.app {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  header.app-header {
+    flex: 0;
+    white-space: nowrap;
+  }
+
+  > main {
+    flex: 1;
+  }
+}
+
+
+.app-title-block {
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  color: #ffffff;
+  font-weight: 300;
+
+  .app-logo {
+    font-size: 24px;
+    line-height: 28px;
+    margin-right: 6px;
+    padding-left: 4px;
+
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+
+    border: solid 1px #fff;
+    border-radius: 50%;
+  }
+
+  .app-title {
+    font-weight: bold;
+    font-size: 200%;
+    margin-right: @margin-md;
+  }
+}
+

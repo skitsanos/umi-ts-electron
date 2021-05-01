@@ -12,7 +12,7 @@ protocol.registerSchemesAsPrivileged([
 function createWindow() {
     mainWindow = new BrowserWindow({
         width: 800,
-        height: 600,
+        height: 700,
         title: `My app -- ${process.env.NODE_ENV}`,
         webPreferences: {
             contextIsolation: true,
