@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
-    "@types/react": "^17.0.3",
+    "@types/react": "^18.0.0",
     "@umijs/preset-react": "^1.8.4",
     "electron": "^12.0.4",
     "electron-builder": "^22.10.5",
