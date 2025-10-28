@@ -23,7 +23,7 @@
     "electron:build:linux": "umi build electron --linux"
   },
   "devDependencies": {
-    "@types/node": "^22.0.0",
+    "@types/node": "^24.0.0",
     "@types/react": "^19.0.0",
     "@umijs/preset-react": "^2.0.0",
     "electron": "^39.0.0",
