@@ -27,7 +27,7 @@
     "@types/react": "^19.0.0",
     "@umijs/preset-react": "^2.0.0",
     "electron": "^39.0.0",
-    "electron-builder": "^25.0.0",
+    "electron-builder": "^26.0.0",
     "umi": "^4.0.0",
     "umi-plugin-electron-builder": "^4.0.0"
   }
